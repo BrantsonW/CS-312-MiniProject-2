@@ -27,7 +27,9 @@
 
                 <option value="Programming">Programming</option>
 
-                <option value="Miscellaneous">Misc</option>
+                <option value="Misc">Misc</option>
+
+                <option value="Pun">Dark</option>
 
                 <option value="Pun">Pun</option>
 
@@ -40,6 +42,25 @@
             <button type="submit">MAKE ME LAUGH</button>
 
         </form>
+
+        <% if (joke) { %>
+            <div class="joke">
+                <% if (joke.type == "single") { %>
+                    <p><%= joke.joke %></p>
+
+                <% } else { %>
+                    <p><%= joke.setup %></p>
+                    <p><strong><%= joke.delivery %></strong></p>
+                <% } %>
+            </div>
+        <% } %>
+
+        <% if (error) { %>
+            <div class="error">
+                <p><%= error %></p>
+                <p>Please choose a category and try again.</p>
+            </div>
+        <% } %>
     </main>
 
 </body>
