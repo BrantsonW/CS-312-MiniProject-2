@@ -13,7 +13,11 @@
 <body>
 
     <main>
+        <header>
         <h1>Joke Generator</h1>
+        </header>
+
+        <section>
 
         <p>Choose a category and get a joke</p>
 
@@ -42,7 +46,9 @@
             <button type="submit">MAKE ME LAUGH</button>
 
         </form>
+        </section>
 
+        <section>
         <% if (joke) { %>
             <div class="joke">
                 <% if (joke.type == "single") { %>
@@ -61,6 +67,8 @@
                 <p>Please choose a category and try again.</p>
             </div>
         <% } %>
+
+        </section>
     </main>
 
 </body>

@@ -166,6 +166,18 @@ article form button:hover
     background-color: darkred;
 }
 
+.joke {
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.error {
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 @media (max-width: 600px)
 {
     header h1
